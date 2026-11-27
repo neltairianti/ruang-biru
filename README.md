@@ -1,6 +1,6 @@
 # Ruang Biru
 
-[**Coba Ruang Biru**](https://ruang-biru.vercel.app/)
+[**Coba Ruang Biru**](https://ruangbiru.vercel.app/)
 
 Ruang Biru adalah situs untuk mengirim lagu dan pesan lewat satu tautan. Pilih lagu, tulis alasan kamu mengirimnya, lalu bagikan Gema ke orang yang kamu tuju.
 
