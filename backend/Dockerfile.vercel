@@ -1,0 +1,11 @@
+FROM dunglas/frankenphp:1-php8.4-alpine
+
+RUN install-php-extensions pdo_pgsql
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+WORKDIR /app
+COPY . .
+RUN composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction
+
+EXPOSE 8000
+CMD ["sh", "-c", "exec frankenphp php-server --listen 0.0.0.0:${PORT:-8000} --root /app/public"]
