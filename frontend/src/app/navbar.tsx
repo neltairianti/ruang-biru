@@ -37,7 +37,7 @@ export function NavBar() {
           ))}
         </nav>
 
-        <Link href="/#buat" className="primary-action col-start-2 row-start-1">
+        <Link href="/#buat" className="primary-action navbar-create-action col-start-2 row-start-1">
           Buat gema <span aria-hidden="true">↗</span>
         </Link>
       </div>
